@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Container } from 'react-bootstrap';
+import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
 import SearchForm from './components/SearchForm'
 import Results from './components/Results'
 
@@ -9,12 +9,18 @@ class App extends Component {
       <div>
         <Jumbotron>
           <Container>
-            <h1>Search App</h1>
-            <p>This is a simple search app</p>
-            <SearchForm />
+            <Row>
+              <Col>
+                <h1>Search App</h1>
+                <p>This is a simple search app</p>
+              </Col>
+              <Col>
+                <SearchForm />
+              </Col>
+            </Row>
           </Container>
         </Jumbotron>
-        <Results/>
+        <Results />
       </div>
     );
   }
