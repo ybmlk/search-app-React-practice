@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
+import { Jumbotron, Container } from 'react-bootstrap';
 
 class App extends Component {
   render() {
     return (
       <div>
         <Jumbotron>
-          <h1></h1>
-          <p>
-            This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.
-        </p>
-          <p>
-            <Button variant="primary">Learn more</Button>
-          </p>
+          <Container>
+            <h1>Search App</h1>
+            <p>This is a simple search app</p>
+          </Container>
         </Jumbotron>
       </div>
     );
